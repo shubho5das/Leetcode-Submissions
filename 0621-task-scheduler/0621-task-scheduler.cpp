@@ -10,15 +10,13 @@ public:
             freq[(tasks[i] - 'A')]++;  
         }
         
-        sort(freq.begin(),freq.end(),greater<int>());    // Note: What the tasks are, no longer matter. Only the frequency values are what we are concerned with.
-                
         // 2
         intervalLen = (gap + 1);
         taskLeft = n;
         
         cnt = 0;
         while(taskLeft > 0){                                                
-            sort(freq.begin(),freq.end(),greater<int>());           
+            sort(freq.begin(),freq.end(),greater<int>());    // Note: What the tasks are, no longer matter. Only the frequency values are what we are concerned with.         
             
             j = 0;
             for(i=0 ; i<intervalLen ; i++){
