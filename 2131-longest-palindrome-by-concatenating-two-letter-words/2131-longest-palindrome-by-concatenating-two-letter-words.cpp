@@ -4,7 +4,7 @@ public:
         int i,n,cnt,ab_cnt,ba_cnt,len;
         n = words.size();
         
-        map<string,int> freq; // {word,cnt}
+        unordered_map<string,int> freq; // {word,cnt}
         for(i=0 ; i<n ; i++){
             freq[words[i]]++;
         }
