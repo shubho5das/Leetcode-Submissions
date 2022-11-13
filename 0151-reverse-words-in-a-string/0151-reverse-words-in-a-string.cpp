@@ -11,13 +11,13 @@ public:
                 i++;
             }
             else{
-                string currentString;
+                string currentWord;
                 while(i<n && S[i] != ' '){
-                    currentString += S[i];
+                    currentWord += S[i];
                     i++;
                 }
                 
-                st.push(currentString);
+                st.push(currentWord);
             }
         }
                         
