@@ -40,7 +40,7 @@ public:
             
             nums.pop_back();
             sz--;
-            auto it = M.find(val);
+            auto it = M.find(val);  // Assumption: No dupicates present
             M.erase(it);
             
             return true;
