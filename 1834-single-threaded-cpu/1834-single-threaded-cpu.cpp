@@ -11,7 +11,7 @@ public:
         
         sort(tasks.begin(),tasks.end());
         
-        set<pair<int,int>> P; // {burstTime,id} (available tasks)
+        set<pair<int,int>> P; // {burstTime,id}     (available tasks)
         vector<int> solution;        
         currentTime = 0;
         for(i=0 ; i<n ; ){            
@@ -28,9 +28,7 @@ public:
             id = (*(P.begin())).second;
             burstTime = (*(P.begin())).first;
             P.erase(P.begin());
-            
-            // cout<<id<<" "<<"\n";
-            
+                        
             solution.push_back(id);
             currentTime = (currentTime + burstTime);
         }
