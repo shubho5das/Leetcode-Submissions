@@ -22,7 +22,7 @@ public:
         n = points.size();
                         
         // 1.2
-        map<int,vector<pair<int,int>>> M; // {s,{e,profit}}
+        map<int,vector<pair<int,int>>> M;  // {s,{e,profit}}
         for(i=0 ; i<startTime.size() ; i++){
             M[startTime[i]].push_back({endTime[i],profitArray[i]});
         }
