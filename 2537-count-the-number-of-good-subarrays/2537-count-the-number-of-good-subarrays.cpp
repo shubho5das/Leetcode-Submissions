@@ -15,13 +15,8 @@ public:
                 
                 cnt -= ((freq[nums[e]]) * (freq[nums[e]] - 1))/2;
                 freq[nums[e]]++;
-                cnt += ((freq[nums[e]]) * (freq[nums[e]] - 1))/2;                    
-                
-                // cout<<s<<" "<<e<<" "<<cnt<<"\n";
-                
+                cnt += ((freq[nums[e]]) * (freq[nums[e]] - 1))/2;                                                
             }
-            
-
             
             // 2
             if(cnt >= k){
@@ -31,9 +26,7 @@ public:
             //3
             cnt -= ((freq[nums[s]]) * (freq[nums[s]] - 1))/2;
             freq[nums[s]]--;
-            cnt += ((freq[nums[s]]) * (freq[nums[s]] - 1))/2;                                    
-            // cout<<s<<" "<<e<<"\n";
-            // cout<<cnt<<"\n";                        
+            cnt += ((freq[nums[s]]) * (freq[nums[s]] - 1))/2;                         
         }
         
         return ans;
