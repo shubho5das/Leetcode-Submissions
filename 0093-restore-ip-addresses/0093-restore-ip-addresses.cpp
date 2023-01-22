@@ -24,7 +24,7 @@ public:
                         }
                     }
                     
-                    val1 = (octet[0].length() <= 3)? stoi(octet[0]) : inf;
+                    val1 = (octet[0].length() <= 3)? stoi(octet[0]) : inf; // to avoid overflow, since input of stoi() must be an interger (< 2^31). For us, it's sufficent to check whether it's <= 255 or not only
                     val2 = (octet[1].length() <= 3)? stoi(octet[1]) : inf;
                     val3 = (octet[2].length() <= 3)? stoi(octet[2]) : inf;
                     val4 = (octet[3].length() <= 3)? stoi(octet[3]) : inf;
