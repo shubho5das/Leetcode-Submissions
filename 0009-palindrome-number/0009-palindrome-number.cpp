@@ -1,14 +1,10 @@
 class Solution {
-public:
-    bool isPalindrome(int x) {
-        int i,j,n;
-        
-        if(x < 0){
-            return false;
-        }
+public:    
+    bool isPalindrome(long long x) {
+        long long i,j,n;
         
         string str = to_string(x);
-        n  = str.size();
+        n = str.length();
         
         i = 0, j = (n-1);
         while(i < j){
@@ -19,6 +15,6 @@ public:
             i++, j--;
         }
         
-        return true;                
+        return true;               
     }
 };
