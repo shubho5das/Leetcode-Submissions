@@ -10,12 +10,8 @@ public:
             i++;
         }
         
-        if(i == n){
-            return (word1.length() <= word2.length()); 
-        }
-        else{
-            return (position[word1[i]] < position[word2[i]]);
-        }
+        return (i == n)? (word1.length() <= word2.length()) : (position[word1[i]] < position[word2[i]]);
+        
     }
     
     bool isAlienSorted(vector<string>& words, string order) {
