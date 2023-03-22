@@ -9,7 +9,7 @@ public:
             int nbrNode = nbr[0];
             int nbrWt = nbr[1];
             
-            minEdge = min(minEdge, nbrWt);
+            minEdge = min(minEdge, nbrWt); // Considering all the edges connected to the currentNode (In this way, all the edges of the CC are covered) 
             
             if(!visited[nbrNode]){                
                 dfs(nbrNode,visited,adjList,minEdge);
