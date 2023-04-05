@@ -1,3 +1,6 @@
+## Larry NY's Code 
+#  Will solve on my own tomorrow
+
 class Solution:
     def minimizeArrayValue(self, nums: List[int]) -> int:
         N = len(nums)
